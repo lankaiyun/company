@@ -6,8 +6,8 @@ import (
 )
 
 func RouterInit(r *gin.Engine) {
-	showRouter := r.Group("/")
+	mainRouter := r.Group("/")
 	{
-		showRouter.GET("/", controllers.Controller{}.Home)
+		mainRouter.GET("/", controllers.Controller{}.Index)
 	}
 }
