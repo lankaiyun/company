@@ -3,187 +3,162 @@
     <html lang="zh-CN">
     <head>
         <meta charset="UTF-8">
-        <title>蓝凯云</title>
-        <meta name="keywords" content="lankaiyun, 蓝凯云, 蓝凯云官网">
+        <meta name="keywords" content="lankaiyun, lanKaiYun, 蓝凯云, 蓝凯云官网">
         <meta name="description"
               content="蓝凯云是一家互联网公司，致力于开发出简洁、好用的软件。">
         <meta name="viewport"
-              content="width=device-width, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+              content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <title>lanKaiYun 蓝凯云</title>
         <link rel="shortcut icon" href="/static/img/favicon.ico">
-        <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/static/css/icon.css">
-        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" href="/static/css/libs.bundle.css">
+        <link rel="stylesheet" href="/static/css/index.bundle.css">
     </head>
-    <body>
-    <!-- 加载器 -->
-    <div class="loading">
-        <div class="circle"></div>
-    </div>
-    <!-- 导航栏 -->
-    <nav class="bg-white navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="/static/img/logo-color.png" alt="logo" style="height: 30px;user-select: none">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcavasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-start" id="offcavasNavbar">
-                <div class="offcanvas-header">
-                    <a class="navbar-brand offcanvas-title" href="/">
-                        <img src="/static/img/logo-color.png" alt="logo" style="height: 30px;user-select: none">
-                    </a>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">首页</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">产品</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">凯云链</a></li>
-                                <li><a class="dropdown-item" href="#">敬请期待</a></li>
-                                <li><a class="dropdown-item" href="#">敬请期待</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">联系我们</a>
-                        </li>
-                    </ul>
+    <body class="headroom headroom--not-bottom headroom--pinned headroom--top" data-aos-easing="ease"
+          data-aos-duration="800" data-aos-delay="0">
+    {{template "public/header-white.html"}}
+    <div class="offcanvas-wrap">
+        <!-- hero -->
+        <section class="bg-black inverted overflow-hidden">
+            <div class="container py-20 d-flex flex-column min-vh-100 foreground">
+                <div class="row my-auto justify-content-center">
+                    <div class="col-lg-6 text-center skrollable skrollable-before"
+                         data-center-center="transform: translateY(0%);" data-top-bottom="transform: translateY(10%);"
+                         style="transform: translateY(0%);">
+                        <span class="badge bg-opaque-red rounded-pill text-cyan mb-4">lanKaiYun</span>
+                        <h1 class="display-1 text-shadow">遇见更好的自己</h1>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <div style="height: 80px"></div>
-    <!-- 主体 -->
-    <div style="background-color: aliceblue">
-        <!-- 幻灯片 -->
-        <div id="slideShow" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#slideShow" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#slideShow" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#slideShow" data-bs-slide-to="2"></button>
-                <button type="button" data-bs-target="#slideShow" data-bs-slide-to="3"></button>
-                <button type="button" data-bs-target="#slideShow" data-bs-slide-to="4"></button>
+            <figure class="background background-gradient-vertical aos-init aos-animate" data-aos="zoom-out"
+                    data-aos-delay="400">
+                <!-- 左上 -->
+                <img class="w-40 shadow position-absolute top-30 end-30 skrollable skrollable-between"
+                     src="/static/img/banner/lotos.png" alt="xia" data-center-top="transform: translateY(0%);"
+                     data-top-bottom="transform: translateY(-80%);" style="transform: translateY(-24.2697%);">
+            </figure>
+            <span class="scroll-down"></span>
+        </section>
+        <!-- 使命.. -->
+        <section class="py-15 py-xl-20">
+            <div class="container">
+                <div class="row g-3 g-xl-5 mb-5">
+                    <div class="col-lg-6">
+                        <h2>使命</h2>
+                    </div>
+                </div>
+                <div class="row g-3 g-xl-5">
+                    <div class="pb-10 text-center aos-init aos-animate" data-aos="fade-up">
+                        <h4 class="fs-5">让信息技术便利人们的生活</h4>
+                    </div>
+                </div>
+                <div class="row g-3 g-xl-5 mb-5">
+                    <div class="col-lg-6">
+                        <h2>愿景</h2>
+                    </div>
+                </div>
+                <div class="row g-3 g-xl-5">
+                    <div class="pb-10 text-center aos-init aos-animate" data-aos="fade-up">
+                        <h4 class="fs-5">成为中国最有温度的互联网公司</h4>
+                    </div>
+                </div>
+                <div class="row g-3 g-xl-5 mb-5">
+                    <div class="col-lg-6">
+                        <h2>价值观</h2>
+                    </div>
+                </div>
+                <div class="row g-3 g-xl-5">
+                    <div class="col-md-6 col-lg-4 text-center aos-init aos-animate" data-aos="fade-up">
+                        <i class="bi bi-emoji-smile fs-1 text-cyan"></i>
+                        <h4 class="fs-5 mt-2">真诚真实</h4>
+                        <p class="text-secondary mx-2">真诚待人，力量源于真实</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 text-center aos-init aos-animate" data-aos="fade-up"
+                         data-aos-delay="100">
+                        <i class="bi bi-globe2 fs-1 text-cyan"></i>
+                        <h4 class="fs-5 mt-2">与时俱进</h4>
+                        <p class="text-secondary mx-2">积极学习和接受先进的新事物</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 text-center aos-init aos-animate" data-aos="fade-up"
+                         data-aos-delay="200">
+                        <i class="bi bi-cloud-haze2-fill fs-1 text-cyan"></i>
+                        <h4 class="fs-5 mt-2">放手去做</h4>
+                        <p class="text-secondary mx-2">不设限，实践出真知</p>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/static/img/banner/1.jpg" class="d-block w-100" alt="1.jpg">
-                    <div class="container">
-                        <div class="carousel-caption text-start">
-                            <h2>持续推进数字化</h2>
-                            <p>数字化在推动社会发展、提升效率等方面发挥着重要的作用。</p>
+        </section>
+        <!-- 订阅 -->
+        <section class="bg-primary mx-xl-3 py-15 py-xl-20 inverted overflow-hidden">
+            <div class="container level-1">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="fw-light mb-5"><span class="fw-bold">订阅我们</span>
+                            我们将最新的产品信息发送到您的邮箱
+                        </h2>
+                        <div class="grouped-inputs p-1 border rounded-pill mb-2">
+                            <div class="row g-1">
+                                <div class="col-lg-9">
+                                    <input type="email" class="form-control px-4 rounded-pill"
+                                           aria-label="Text input with dropdown button" id="email"
+                                           placeholder="您的邮箱">
+                                </div>
+                                <div class="col-lg-3 d-grid">
+                                    <button class="btn btn-white rounded-pill" id="btnSubscribe">订阅</button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="/static/img/banner/2.jpg" class="d-block w-100" alt="2.jpg">
-                    <div class="container">
-                        <div class="carousel-caption text-start">
-                            <h2>向一切先进学习</h2>
-                            <p>终身学习、一切先进都是我们学习的目标。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="/static/img/banner/3.jpg" class="d-block w-100" alt="3.jpg">
-                    <div class="container">
-                        <div class="carousel-caption text-start">
-                            <h2>大道至简</h2>
-                            <p>去繁从简、人尽其才、物尽其用，大道至简是一种境界。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="/static/img/banner/4.jpg" class="d-block w-100" alt="4.jpg">
-                </div>
-                <div class="carousel-item">
-                    <img src="/static/img/banner/5.jpg" class="d-block w-100" alt="5.jpg">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#slideShow" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#slideShow" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
-        <!-- 愿景 -->
-        <div class="container px-4 py-5">
-            <h2 class="pb-2 border-bottom">愿景</h2>
-            <div class="px-5 pt-5 text-center">
-                <h4 class="text-body-emphasis">活到2030年不倒闭</h4>
-            </div>
-        </div>
-        <!-- 使命 -->
-        <div class="container px-4 py-5">
-            <h2 class="pb-2 border-bottom">使命</h2>
-            <div class="px-5 pt-5 text-center">
-                <h4 class="text-body-emphasis">让信息技术便利人们的生活</h4>
-            </div>
-        </div>
-        <!-- 价值观 -->
-        <div class="container px-4 py-5">
-            <h2 class="pb-2 border-bottom">价值观</h2>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                <div class="col d-flex align-items-start">
-                    <div class="text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                        <span class="material-icons"
-                              style="font-size: 40px;color: deepskyblue;user-select: none">mood</span>
-                    </div>
-                    <div>
-                        <h4 class="text-body-emphasis">真诚真实</h4>
-                        <p>真诚待人，力量源于真实。</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div class="text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                        <span class="material-icons" style="font-size: 40px;color: deepskyblue;user-select: none">blur_on</span>
-                    </div>
-                    <div>
-                        <h4 class="text-body-emphasis">与时俱进</h4>
-                        <p>积极学习和接受先进的新事物。</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div class="text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                        <span class="material-icons" style="font-size: 40px;color: deepskyblue;user-select: none">auto_graph</span>
-                    </div>
-                    <div>
-                        <h4 class="text-body-emphasis">放手去做</h4>
-                        <p>不设限，实践出真知。</p>
+                        <small class="text-muted">我们承诺永远不会泄漏您的邮箱！</small>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- 页尾 -->
-    <div class="bg-black">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <img src="/static/img/logo-color.png" alt="logo-bigger" style="height: 50px; user-select: none">
-                </div>
-                <div class="col-md-8 text-secondary" style="user-select: none">
-                    <span><a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank"
-                             style="text-decoration: none; color: inherit;"
-                             onmouseover="this.style.textDecoration='underline'; this.style.color='white';"
-                             onmouseout="this.style.textDecoration='none'; this.style.color='inherit';">赣ICP备2024022924号-1</a></span><br>
-                    <span><a href="https://beian.mps.gov.cn/#/query/webSearch?code=36032202000077" rel="noreferrer"
-                             target="_blank" style="text-decoration: none; color: inherit;"
-                             onmouseover="this.style.textDecoration='underline'; this.style.color='white';"
-                             onmouseout="this.style.textDecoration='none'; this.style.color='inherit';">赣公网安备36032202000077号</a></span><br>
-                    <span>© lanKaiYun | 萍乡蓝凯云信息技术有限公司</span>
-                </div>
-            </div>
-        </div>
+            <figure class="background background-overlay background-parallax skrollable skrollable-between"
+                    style="background-image: url('/static/img/banner/keji.jpg'); transform: translateY(7.4788%);"
+                    data-bottom-top="transform: translateY(0%);" data-top-bottom="transform: translateY(20%);">
+            </figure>
+        </section>
+        <div class="py-10"></div>
+        <!-- footer -->
+        {{template "public/footer.html"}}
     </div>
     <script src="/static/js/jquery-3.7.1.min.js"></script>
-    <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/static/js/main.js"></script>
+    <script src="/static/js/vendor.bundle.js"></script>
+    <script src="/static/js/index.bundle.js"></script>
+    <script src="/static/js/sweetalert2.all.min.js"></script>
+    <script>
+        function isValidEmail(email) {
+            // 正则表达式用于检测邮箱格式
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        $("#btnSubscribe").click(() => {
+            let email = $("#email").val();
+            if (isValidEmail(email)) {
+                $.ajax({
+                    url: "/addSubscription",
+                    type: "POST",
+                    data: {"email": email},
+                    dataType: "json",
+                    success: function (data) {
+                        if (data["result"] === "1") {
+                            Swal.fire({
+                                icon: "success",
+                                title: "订阅成功🎉",
+                            });
+                        } else {
+                            Swal.fire("该邮箱已订阅！");
+                        }
+                    },
+                })
+            } else {
+                Swal.fire({
+                    icon: "error",
+                    title: "邮箱格式似乎有点问题🥹",
+                });
+            }
+        });
+    </script>
     </body>
     </html>
 {{end}}

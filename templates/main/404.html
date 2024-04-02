@@ -1,0 +1,39 @@
+{{define "main/404.html"}}
+    <!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="lankaiyun, lanKaiYun, 蓝凯云, 蓝凯云官网">
+        <meta name="description"
+              content="蓝凯云是一家互联网公司，致力于开发出简洁、好用的软件。">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <title>404 - lanKaiYun 蓝凯云</title>
+        <link rel="shortcut icon" href="/static/img/favicon.ico">
+        <link rel="stylesheet" href="/static/css/libs.bundle.css">
+        <link rel="stylesheet" href="/static/css/index.bundle.css">
+    </head>
+    <body class="bg-cyan headroom headroom--top headroom--not-bottom" data-aos-easing="ease"
+          data-aos-duration="800" data-aos-delay="0">
+    {{template "public/header-white.html"}}
+    <section class="inverted">
+        <div class="d-flex flex-column container min-vh-100 py-20">
+            <div class="row align-items-center justify-content-center justify-content-lg-between my-auto">
+                <div class="col-lg-6 order-lg-2">
+                    <img class="img-fluid" src="/static/img/svg/404.svg" alt="Figure">
+                </div>
+                <div class="col-md-8 col-lg-5 order-lg-1 text-center text-lg-start">
+                    <h1 class="display-2">对不起！我们遇到了一个意想不到的错误。</h1>
+                    <a href="/" class="btn btn-rounded btn-outline-white rounded-pill">返回主页</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{template "public/footer.html"}}
+    <script src="/static/js/jquery-3.7.1.min.js"></script>
+    <script src="/static/js/vendor.bundle.js"></script>
+    <script src="/static/js/index.bundle.js"></script>
+    </body>
+    </html>
+{{end}}

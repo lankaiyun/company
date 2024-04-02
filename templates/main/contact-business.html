@@ -1,0 +1,81 @@
+{{define "main/contact-business.html"}}
+    <!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="lankaiyun, lanKaiYun, 蓝凯云, 蓝凯云官网">
+        <meta name="description"
+              content="蓝凯云是一家互联网公司，致力于开发出简洁、好用的软件。">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <title>联系我们 - lanKaiYun 蓝凯云</title>
+        <link rel="shortcut icon" href="/static/img/favicon.ico">
+        <link rel="stylesheet" href="/static/css/libs.bundle.css">
+        <link rel="stylesheet" href="/static/css/index.bundle.css">
+    </head>
+    <body class="headroom headroom--not-bottom headroom--pinned headroom--top" data-aos-easing="ease"
+          data-aos-duration="800" data-aos-delay="0">
+    {{template "public/header-black.html"}}
+    <section class="py-15 py-xl-20">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-6">
+                    <h2 class="fw-bold mb-6">商务合作<span class="text-secondary">shangwu@lankaiyun.com</span></h2>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="yourName" class="form-label">姓名</label>
+                            <input type="text" class="form-control" id="yourName" placeholder="您的姓名">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="yourCompany" class="form-label">联系方式</label>
+                            <input type="text" class="form-control" id="yourContact" placeholder="您的联系方式">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="yourMessage" class="form-label">信息</label>
+                            <textarea class="form-control" id="yourMessage" rows="3" placeholder="您的信息"></textarea>
+                        </div>
+                        <div class="col-md-8 mt-4">
+                            <button class="btn btn-lg btn-primary btn-with-icon rounded-pill" id="btnEmailContact">
+                                发送<i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{template "public/footer.html"}}
+    <script src="/static/js/jquery-3.7.1.min.js"></script>
+    <script src="/static/js/vendor.bundle.js"></script>
+    <script src="/static/js/index.bundle.js"></script>
+    <script src="/static/js/sweetalert2.all.min.js"></script>
+    <script>
+        $("#btnEmailContact").click(() => {
+            let name = $("#yourName").val();
+            let contact = $("#yourContact").val();
+            let message = $("#yourMessage").val();
+            $.ajax({
+                url: "/emailContact",
+                type: "POST",
+                data: {
+                    "type": "business",
+                    "name": name,
+                    "contact": contact,
+                    "message": message,
+                },
+                dataType: "json",
+                success: function (data) {
+                    $("#yourName").val("");
+                    $("#yourContact").val("");
+                    $("#yourMessage").val("");
+                    Swal.fire({
+                        icon: "success",
+                        title: "发送成功🎉",
+                    });
+                },
+            })
+        });
+    </script>
+    </body>
+    </html>
+{{end}}

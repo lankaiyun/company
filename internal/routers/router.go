@@ -6,8 +6,12 @@ import (
 )
 
 func RouterInit(r *gin.Engine) {
-	mainRouter := r.Group("/")
+	router := r.Group("/")
 	{
-		mainRouter.GET("/", controllers.Controller{}.Index)
+		router.GET("/", controllers.Controller{}.Index)
+		router.GET("/contact", controllers.Controller{}.Contact)
+
+		router.POST("/addSubscription", controllers.Controller{}.AddSubscription)
+		router.POST("/emailContact", controllers.Controller{}.EmailContact)
 	}
 }

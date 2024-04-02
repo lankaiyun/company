@@ -1,0 +1,22 @@
+Server:
+  RunMode: release
+  HttpPort: 7777
+  ReadTimeout: 60
+  WriteTimeout: 60
+Email:
+  Host: smtp.qq.com
+  Port: 465
+  UserName: 1873887255@qq.com
+  Password: xxx
+  IsSSL: true
+  From: 1873887255@qq.com
+Database:
+  DBType: mysql
+  UserName: root
+  Password: xxx
+  Host: 121.196.245.107:3306
+  DBName: lankaiyun
+  Charset: utf8
+  ParseTime: True
+  MaxIdleConns: 10
+  MaxOpenConns: 30
